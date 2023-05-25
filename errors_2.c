@@ -7,8 +7,8 @@ int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
 
 /**
- * pop_error - Prints pop error messages for empty stacks.
- * @line_number: Line number in script where error occured.
+ * pop_error - it prints the pop error messages for empty stacks.
+ * @line_number: Line number in the script where error occured or occurs
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -19,8 +19,8 @@ int pop_error(unsigned int line_number)
 }
 
 /**
- * pint_error - Prints pint error messages for empty stacks.
- * @line_number: Line number in Monty bytecodes file where error occurred.
+ * pint_error - it prints the pint error messages for the empty stacks.
+ * @line_number: Line number in Monty bytecodes file where error occurred or occurs
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -31,10 +31,10 @@ int pint_error(unsigned int line_number)
 }
 
 /**
- * short_stack_error - Prints monty math function error messages
+ * short_stack_error - it prints the monty math function error messages
  *                     for stacks/queues smaller than two nodes.
- * @line_number: Line number in Monty bytecodes file where error occurred.
- * @op: Operation where the error occurred.
+ * @line_number: Line number in Monty bytecodes file where error occurred or occurs
+ * @op: Operation where the error occurred or occurs
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -45,8 +45,8 @@ int short_stack_error(unsigned int line_number, char *op)
 }
 
 /**
- * div_error - Prints division error messages for division by 0.
- * @line_number: Line number in Monty bytecodes file where error occurred.
+ * div_error - it prints division error messages for division by 0.
+ * @line_number: Line number in Monty bytecodes file where error occurred or occurs
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -57,10 +57,10 @@ int div_error(unsigned int line_number)
 }
 
 /**
- * pchar_error - Prints pchar error messages for empty stacks
- *               empty stacks and non-character values.
- * @line_number: Line number in Monty bytecodes file where error occurred.
- * @message: The corresponding error message to print.
+ * pchar_error - it prints the pchar error messages for empty stacks
+ *              empty stacks and non-character values.
+ * @line_number: Line number in Monty bytecodes file where error occurred or occurs
+ * @message: it is the corresponding error message to print.
  *
  * Return: (EXIT_FAILURE) always.
  */
